@@ -45,7 +45,7 @@ data/
 
 ## Training
 
-[hyperparameters.sh](hyperparameters.sh) lists GCFBC, MC, TD2, MCHC, and Dyn-Aug
+[hyperparameters.sh](hyperparameters.sh) lists GCFBC, TD-Aug with MC, TD^2, or MCHC, and Dyn-Aug (onestep dynamics baseline)
 training commands. Each command calls `main.py` or `main_gen.py`, where `main.py` is used for training policies, and `main_gen.py` trains a tdflow, and then a policy with augmented goals. Visual experiments also train an image encoder and manipulation experiments also train an action prior.
 
 For example, to train GCFBC policy on pointmaze-large:
@@ -60,7 +60,7 @@ python main.py \
   --train_steps=1000000 --eval_interval=100000 --eval_episodes=50 \
   --seed=0 --save_dir=outputs --wandb_mode=offline
 ```
-or MCHC on pointmaze-large:
+or TD-Aug with MCHC on pointmaze-large:
 ```bash
 python main_gen.py --seed=0 --dataset_path=data/pointmaze-large-stitch-terminal-v0.npz --save_dir=outputs \
   --project=td-aug --run_group=pointmaze-mchc --wandb_mode=offline \
