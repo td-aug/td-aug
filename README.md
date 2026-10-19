@@ -1,6 +1,23 @@
 # TD-Aug
+[![arXiv](https://img.shields.io/badge/arXiv-2610.19129-df2a2a.svg)](https://arxiv.org/abs/2610.19129)
+![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?logo=github)
+[![Static Badge](https://img.shields.io/badge/Project-Page-a)](https://td-aug.github.io/)
 
 Code for **Imagining Goals with Geometric Horizon Models for Policy Generalization**.
+
+```bibtex
+@misc{lawson2026imagininggoalsgeometrichorizon,
+      title={Imagining Goals with Geometric Horizon Models for Policy Generalization}, 
+      author={Daniel Lawson and Dhruv Sreenivas and Adriana Hugessen and Khimya Khetarpal and Glen Berseth},
+      year={2026},
+      eprint={2610.19129},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2610.19129}, 
+}
+```
+
+
 
 ## Environment
 
